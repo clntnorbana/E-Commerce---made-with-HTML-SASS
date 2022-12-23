@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.body-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.top-header {
+  background-color: #ecf1f1;
+  padding: 8px 0;
+}
+.top-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+.top-header ul a {
+  font-size: 0.85em;
+  color: #111;
+}
+.top-header ul a:hover {
+  opacity: 0.7;
+}
+
+.navigation {
+  background-color: #fff;
+  height: 80px;
+}
+.navigation .btn-open-menu,
+.navigation .btn-close-menu {
+  display: none;
+}
+@media (max-width: 910px) {
+  .navigation .btn-open-menu,
+  .navigation .btn-close-menu {
+    display: block;
+  }
+}
+.navigation i {
+  font-size: 23px;
+}
+.navigation button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+.navigation button:hover {
+  background-color: #ecf1f1;
+}
+.navigation .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .logo2 {
+  color: #111;
+}
+.navigation .logo2 i {
+  font-size: 35px;
+}
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+.navigation ul a {
+  font-size: 1.1em;
+  color: #111;
+}
+.navigation ul a i {
+  font-size: 18px;
+}
+.navigation ul .menu_moreft {
+  display: none;
+}
+.navigation .nav-right {
+  display: flex;
+  gap: 5px;
+}
+.navigation .search_field {
+  position: relative;
+}
+.navigation .search_field input {
+  width: 100%;
+  padding: 12px 0 12px 40px;
+  border: none;
+  background-color: #ecf1f1;
+  border-radius: 50px;
+  outline: none;
+  font-size: 0.9em;
+}
+.navigation .search_field i {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navigation .search_field i:hover {
+  background-color: #ecf1f1;
+}
+
+main .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 14px 24px;
+  border-radius: 40px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+}
+main .btn:hover {
+  background-color: rgb(79, 72, 72);
+}
+main section {
+  margin-bottom: 70px;
+}
+main h1 {
+  margin-bottom: 25px;
+}
+main .image-container img {
+  width: 100%;
+  height: 100%;
+}
+main .div-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+main .div-group .text-group {
+  text-align: center;
+}
+main .div-group .text-group .lead {
+  font-size: 4em;
+  font-weight: bold;
+}
+main .div-group .text-group .subtext-2 {
+  margin-top: 16px;
+}
+main .div-group .text-group .subtext-3 {
+  margin-top: 16px;
+}
+main .div-group .buttons {
+  margin-top: -10px;
+}
+
+#slides .splide__list {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  gap: 10px;
+}
+#slides .splide__slide {
+  position: relative;
+}
+#slides img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#slides .btn-view {
+  margin: 0;
+}
+#slides .info {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+#slides .last_slide {
+  border: solid 1px #111;
+}
+#slides .last_slide img {
+  opacity: 0.6;
+}
+#slides .last_slide .more {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  padding: 10px;
+}
+#slides .last_slide p {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+#slides .last_slide .learn_more {
+  margin-top: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 14px 24px;
+  border: solid 1px #111;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #111;
+}
+#slides .last_slide .learn_more:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+#more_glide .more {
+  display: flex;
+  gap: 10px;
+}
+#more_glide a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+#more_glide h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+#more_glide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: ease all 0.5s;
+}
+#more_glide img:hover {
+  opacity: 0.7;
+  transition: ease all 0.5s;
+}
+
+footer {
+  background-color: #111;
+  margin-top: 8rem;
+}
+footer .container {
+  padding: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer span {
+  color: rgb(208, 208, 208);
+}
+
+@media screen and (max-width: 910px) {
+  .top-header {
+    display: none;
+  }
+  .navigation ul {
+    position: fixed;
+    height: 100vh;
+    width: 325px;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    flex-direction: column;
+    padding: 3rem 0 2rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s all ease;
+    overflow-y: scroll;
+    opacity: 0;
+  }
+  .navigation ul.active {
+    right: 0;
+    transition: 0.3s all ease;
+    opacity: 1;
+  }
+  .navigation ul::-webkit-scrollbar {
+    display: none;
+  }
+  .navigation ul .btn-close-menu {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+  }
+  .navigation ul .menu_moreft {
+    display: block;
+    margin-top: 2rem;
+    padding: 0 10px 0 0;
+  }
+  .navigation ul .message {
+    font-size: 1.3rem;
+    color: rgb(100, 97, 97);
+  }
+  .navigation ul .account-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .navigation ul .account-buttons button {
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 14px 24px;
+    border-radius: 40px;
+  }
+  .navigation ul .account-buttons .btn-joinus {
+    background-color: #111;
+    border: none;
+    color: #fff;
+  }
+  .navigation ul .account-buttons .btn-joinus:hover {
+    background-color: rgb(79, 72, 72);
+  }
+  .navigation ul .account-buttons .btn-signin {
+    border: solid 1px lightgray;
+    background-color: #fff;
+  }
+  .navigation ul .account-buttons .btn-signin:hover {
+    border: solid 1px #111;
+  }
+  .navigation ul .second_menu {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navigation ul .second_menu a {
+    font-size: 1.1rem;
+  }
+  .navigation ul a {
+    font-size: 23px;
+  }
+  main .image-container img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  main .div-group .lead {
+    font-size: 48px !important;
+    line-height: 2.5rem;
+    margin: 10px 0;
+  }
+  #more_glide h2 {
+    background-color: transparent;
+    color: #111;
+    font-size: 1rem;
+    padding: 0;
+    top: 100%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  main .div-group {
+    align-items: flex-start;
+  }
+  main .div-group .text-group {
+    text-align: start;
+  }
+  main .div-group .text-group .lead {
+    font-size: 36px !important;
+    line-height: 2rem;
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
