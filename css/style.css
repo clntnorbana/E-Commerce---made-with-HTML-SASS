@@ -275,6 +275,11 @@ footer .container {
 footer span {
   color: rgb(208, 208, 208);
 }
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
 @media screen and (max-width: 910px) {
   .top-header {
